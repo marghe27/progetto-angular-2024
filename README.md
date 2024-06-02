@@ -1,2 +1,2 @@
-# progetto-angular-2024
-Progetto personale 
+# Project Demo in Angular 16
+Personal Project
