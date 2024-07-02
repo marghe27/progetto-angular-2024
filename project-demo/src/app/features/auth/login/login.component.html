@@ -1,0 +1,33 @@
+<div class="min-h-screen flex p-6 items-center justify-center">
+    <div class="flex flex-col items-center bg-neutral max-w-lg rounded-xl shadow-md p-6">
+      <div class="flex-1 justify-center items-center">
+          <img class="h-14 w-14 rounded-lg ml-2 mb-4" src="../../../../assets/images/logoBAM.jpg" alt="">
+          <h2 class="text-2xl text-orange-400 font-bold mb-6">Login</h2>
+      </div>
+      
+      <form [formGroup]="loginForm" (ngSubmit)="login()" class="w-full max-w-xs">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            Username
+          </label>
+          <input type="text" id="email" formControlName="email" placeholder="email" class="input input-bordered input-primary w-full" />
+          <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" class="text-red-500 text-sm">
+            Invalid email
+          </div>
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+            Password
+          </label>
+          <input type="password" id="password" formControlName="password" placeholder="password" class="input input-bordered input-primary w-full" />
+          <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched" class="text-red-500 text-sm">
+            Password must be at least 8 characters long, contain two uppercase letters, one special character, two digits, and three lowercase letters.
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+          <button type="button" class="btn btn-secondary ml-2" (click)="goToRegister()">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>

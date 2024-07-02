@@ -1,0 +1,14 @@
+
+     
+    <dialog #messageDialog class="modal">
+            <div class="modal-box">
+              <h3 class="font-bold text-lg">{{ modalTitle }}</h3>
+              <p class="py-4">{{ modalMessage }}</p>
+              <div class="modal-action">
+                <button *ngIf="isUpdate" (click)="updateUser.emit()" class="btn btn-primary">Conferma Update</button>
+                <button *ngIf="!isUpdate" (click)="deleteUser.emit()" class="btn btn-primary">Conferma Delete</button>
+                <button (click)="closeModal()" class="btn">Chiudi</button>
+              </div>
+            </div>
+      </dialog> 
+

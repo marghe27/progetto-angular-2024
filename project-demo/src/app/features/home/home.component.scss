@@ -1,0 +1,8 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+  
+  .content {
+    min-height: calc(100vh - 80px); // Calcola l'altezza del contenuto tenendo conto dell'altezza del footer
+    margin-bottom: 80px; // Aggiunge uno spazio inferiore per il contenuto sopra il footer fisso
+  }

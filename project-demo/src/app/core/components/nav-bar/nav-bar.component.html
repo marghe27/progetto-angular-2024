@@ -1,0 +1,47 @@
+<div class="navbar bg-neutral fixed top-0 w-full"> <!-- bg-base-100 -->
+    <div class="flex-1">
+    <!-- <div class="flex-shrink-0"> -->
+      <img class="h-14 w-14 rounded-xl ml-4" src="../../../../assets/images/logoBAM.jpg" alt="">
+      <!-- <a class="btn btn-ghost text-xl">HOME</a> -->
+    </div>
+  
+   <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+  <li><button [routerLink]="['/home']">HOME</button></li>
+      <li><button [routerLink]="['/gallery']">GALLERY</button></li>
+      <li>
+        <details>
+          <summary>E-COMMERCE</summary>
+          <ul class="p-2">
+            <li><button [routerLink]="['/ecommerce']">CARRELLO</button></li>
+          </ul>
+        </details>
+      </li>
+     
+      <li>
+        <details>
+          <summary>CONTATTI</summary>
+          <ul class="p-2">
+            <li><button [routerLink]="['/contacts']">CONTATTAMI</button></li>
+            <li><a>RUBRICA TELEFONICA</a></li>
+          </ul>
+        </details> 
+      </li>
+    </ul>
+  </div>
+
+  <div class="flex-none">
+    <ul class="menu menu-horizontal px-1">
+      <!-- <li><a>Link</a></li> -->
+      <li>
+        <details>
+          <summary>  LOGOUT </summary>
+          <ul class="p-2 bg-base-100 rounded-t-none"> 
+            <li><button [routerLink]="['/manage-account']">GESTISCI ACCOUNT</button></li>
+            <li><button (click)="logout()">ESCI</button>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+</div>
