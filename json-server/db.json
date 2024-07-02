@@ -1,0 +1,130 @@
+{
+  "usersList": [
+    {
+      "id": 1,
+      "name": "Stefania",
+      "surname": "Pappalardo",
+      "email": "stefania@tin.it",
+      "password": "AA@67aaa"
+    },
+    {
+      "id": 2,
+      "name": "Simone",
+      "surname": "Caltabiano",
+      "email": "simone@tin.it",
+      "password": "AA@67aaa"
+    },
+    {
+      "id": 3,
+      "name": "Stefano",
+      "surname": "Sempronio",
+      "email": "sempronio@tin.it",
+      "password": "AA@67aaa"
+    },
+    {
+      "id": 4,
+      "name": "Ugo",
+      "surname": "Caio",
+      "email": "caio@tin.it",
+      "password": "AA@67aaa"
+    },
+    {
+      "id": 5,
+      "name": "Carlo",
+      "surname": "Ruben",
+      "email": "ruben@tin.it",
+      "password": "AA@67aaa"
+    },
+    {
+      "id": 6,
+      "name": "Margherita ",
+      "surname": "Bonanno",
+      "email": "marghe@live.it",
+      "password": "AA@56dfg"
+    },
+    {
+      "id": 7,
+      "name": "Daria ",
+      "surname": "Sottile",
+      "email": "daria.sottile@gmail.com",
+      "password": "FF@56sdf"
+    },
+    {
+      "id": 8,
+      "name": "Giorgio",
+      "surname": "Maugeri",
+      "email": "maugeri@gmail.com",
+      "password": "AA@88dfg"
+    },
+    {
+      "id": 9,
+      "name": "Claudio",
+      "surname": "Pappalardo",
+      "email": "claudio@gmail.com",
+      "password": "AA@56dfg"
+    },
+    {
+      "id": 10,
+      "name": "Rita",
+      "surname": "Zappalà",
+      "email": "rita@live.it",
+      "password": "DD@45dfg"
+    },
+    {
+      "id": 11,
+      "name": "Nadia",
+      "surname": "Cassini",
+      "email": "nadia@tim.it",
+      "password": "AA@67sdf"
+    },
+    {
+      "id": 12,
+      "name": "Cristiano ",
+      "surname": "Rossi",
+      "email": "cristian@alice.it",
+      "password": "DD@67sdf"
+    },
+    {
+      "id": 13,
+      "name": "Mara",
+      "surname": "Eli",
+      "email": "mara@gmail.com",
+      "password": "AA#56sdf"
+    },
+    {
+      "id": 14,
+      "name": "Claudio ",
+      "surname": "Bonanno",
+      "email": "claudio@alice.it",
+      "password": "AA#67sdf"
+    },
+    {
+      "id": 15,
+      "name": "Filippo",
+      "surname": "Bua",
+      "email": "bua@tim.it",
+      "password": "AA@55dfg"
+    },
+    {
+      "id": 16,
+      "name": "Lidia",
+      "surname": "Franchetti",
+      "email": "franca@tin.it",
+      "password": "GG@56rty"
+    },
+    {
+       "id": 17,
+      "name": "Giuseppa",
+      "surname": "Giaccone",
+      "email": "giaccone@live.it",
+      "password": "AA@56dfg"
+    },
+    {
+      "id": 18,
+      "name": "Carlina",
+      "surname": "Rubicone",
+      "email": "rubicone@live.it",
+      "password": "AA@56dfg"
+    }
+  ]
+}
