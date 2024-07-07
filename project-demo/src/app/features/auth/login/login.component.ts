@@ -56,13 +56,16 @@ export class LoginComponent implements OnInit{
 
 /** Login method */
    login(){
+    console.log('Login method called');
     if(this.loginForm.valid){
       const {email, password} = this.loginForm.value;
       this.authService.login(email, password).subscribe({
         next: (response: AuthenticationResponse) => {
           if (response.token){
             localStorage.setItem('ACCESS_TOKEN', response.token); 
-            this.router.navigate(['/home']);
+            this.router.navigate(['/home']).then(navigationSuccess => 
+              navigationSuccess ? console.log('Navigated to home') : console.error('Navigation to home failed!')
+            );
           } else {
             console.log(" Sei entrato nell' else ")
             alert("Inserisci username e password corretti!");
