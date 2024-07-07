@@ -158,7 +158,19 @@ server.delete('/userList/:id', (req, res) => {
   res.status(200).json({ message: 'User deleted successfully', user: deletedUser });
 });
 
-
+// Endpoint per ottenere i dettagli dell'utente tramite email
+server.get('/usersList/:email', (req, res) => {
+  const email = req.params.email;
+  const db = readDB();
+  // Cerca l'utente nel database
+  const user = db.usersList.find(user => user.email === email);
+  
+  if (user) {
+    res.json(user);
+  } else {
+    res.status(404).send('User not found');
+  }
+});
 
 // Get all users
 server.get('/usersList', (req, res) => {
