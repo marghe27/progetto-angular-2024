@@ -23,7 +23,6 @@
           <summary>CONTATTI</summary>
           <ul class="p-2">
             <li><button [routerLink]="['/contacts']">CONTATTAMI</button></li>
-            <li><a>RUBRICA TELEFONICA</a></li>
           </ul>
         </details> 
       </li>
@@ -35,10 +34,11 @@
       <!-- <li><a>Link</a></li> -->
       <li>
         <details>
-          <summary>  LOGOUT </summary>
+          <summary>  GESTIONE ACCOUNT </summary>
           <ul class="p-2 bg-base-100 rounded-t-none"> 
-            <li><button [routerLink]="['/manage-account']">GESTISCI ACCOUNT</button></li>
-            <li><button (click)="logout()">ESCI</button>
+            <li><button [routerLink]="['/manage-account']">ACCOUNT PERSONALE</button></li>
+            <li><a> UTENTI REGISTRATI (ADMIN)</a></li>
+            <li><button (click)="logout()">LOGOUT</button>
           </ul>
         </details>
       </li>
