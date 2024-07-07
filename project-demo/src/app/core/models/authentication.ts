@@ -1,7 +1,11 @@
-export interface Authentication {    
+
+export interface Authentication {  
+        id?:number;  
         email: string; 
+        name?:string;
         password?: string;
-        loginDate: Date;
+        token:string;
+        loginDate?: Date;
         expirationDate: Date;
 }
 
