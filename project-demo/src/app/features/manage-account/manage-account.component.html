@@ -29,6 +29,7 @@
 						<!-- Check for deleting the user registered -->
 						<input type="checkbox" class="toggle toggle-secondary" [(ngModel)]="isDeleteChecked"  />
 					</label>
+					
 				 </th>
 					<th>
 						<label>
@@ -82,12 +83,13 @@
   </main>
 <!-- Modale per la conferma -->
 <app-message-dialog
+  #messageDialog
   [modalTitle]="modalTitle"
   [modalMessage]="modalMessage"
   [isUpdate]="isUpdate"
   (updateUser)="updateUser()"
   (deleteUser)="deleteUser()"
   [user]="user"
-  #messageDialog>
+  >
 </app-message-dialog>
 <app-footer></app-footer>
