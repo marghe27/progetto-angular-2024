@@ -113,7 +113,7 @@ deleteUser(): void {
     return;
   }
 
-  this.authService.deleteUser().subscribe({
+  this.authService.deleteUser(this.user).subscribe({
     next: () => {
       this.router.navigate(['/login']); // Redirect to the login page after the delete
       
