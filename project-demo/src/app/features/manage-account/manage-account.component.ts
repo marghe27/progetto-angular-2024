@@ -78,7 +78,7 @@ updateUser(): void{
     return;
   }
   console.log('Updating user:', this.user); // Log di debug
-  this.authService.updateUserDetails(this.user).subscribe({
+  this.authService.updateUser(this.user).subscribe({
     next: (updatedUser: User)=>{
       this.user = updatedUser;
       console.log('User updated successfully:', updatedUser); // Log di debug
@@ -113,7 +113,7 @@ deleteUser(): void {
     return;
   }
 
-  this.authService.deleteUserAccount().subscribe({
+  this.authService.deleteUser().subscribe({
     next: () => {
       this.router.navigate(['/login']); // Redirect to the login page after the delete
       
