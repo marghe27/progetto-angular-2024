@@ -9,6 +9,7 @@ import { ManageAccountComponent } from './features/manage-account/manage-account
 import { EcommerceComponent } from './features/ecommerce/ecommerce.component';
 import { ContactsComponent } from './features/contacts/contacts.component';
 import { GalleryComponent } from './features/gallery/gallery.component';
+import { RegisteredListComponent } from './features/registered-list/registered-list.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -19,6 +20,7 @@ export const routes: Routes = [
   { path: 'gallery', component: GalleryComponent, canActivate: [authGuard]},
   { path: 'ecommerce', component: EcommerceComponent, canActivate: [authGuard]},
   { path: 'contacts', component: ContactsComponent, canActivate: [authGuard]},
+  { path: 'registered-list', component: RegisteredListComponent, canActivate: [authGuard]},
   { path: '**', redirectTo: '/home' } // Rotta di fallback
 ];
 
