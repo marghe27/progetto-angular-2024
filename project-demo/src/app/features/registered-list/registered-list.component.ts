@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavBarComponent } from 'src/app/core/components/nav-bar/nav-bar.component';
 import { FooterComponent } from 'src/app/core/components/footer/footer.component';
-import { AuthenticationService } from 'src/app/core/services/authentication.service';
+import { AdminUserService } from 'src/app/core/services/admin-user.service';
 import { User } from 'src/app/core/models/user';
+import { ToastService } from 'src/app/core/services/toast.service';
 
 @Component({
   selector: 'app-registered-list',
@@ -26,7 +27,10 @@ export class RegisteredListComponent implements OnInit {
   };
   users: User[] = [];
 
-  constructor(private authService: AuthenticationService) {}
+  constructor(
+    private authService: AdminUserService,
+    private toastService: ToastService
+    ) {}
 
   ngOnInit(): void { 
     this.authService.getAllUsers().subscribe({
@@ -40,4 +44,14 @@ export class RegisteredListComponent implements OnInit {
       });
 
   }
+
+openUpdateModal(user:User){
+  this.user = user;
+  //inserire il modale
+}
+
+
+openDeleteModal(user:User){}
+
+
 }

@@ -1,0 +1,12 @@
+/** Questo CSS previene la sovrapposizione della tabella con il menù e il footer */
+.main-content {
+    margin-top: 150px; /* il main non si sovrappone al menu */
+    margin-bottom: 150px; /* Il footer non si sovrappone al main */
+    overflow-y: auto;
+    max-height: calc(100vh - 300px); /* Altezza massima per evitare sovrapposizione */
+    /* padding-top: 20px; */
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
