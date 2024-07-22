@@ -7,5 +7,5 @@ export interface User {
     gender?: string;
     birthdate?: Date;
     location?: string;
-        
+    imageUrl?:string;
 }

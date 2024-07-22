@@ -12,6 +12,8 @@ const SECRET_KEY = 'Paperina';
 const expiresIn = '1h';
 
 server.use(middlewares);
+/** bodyParser è un middleware che permette al server di analizzare il corpo delle richieste in entrata. 
+Questo è utile per processare dati inviati con metodi HTTP come POST e PUT. */
 server.use(jsonServer.bodyParser);
 
 // Create a JWT token

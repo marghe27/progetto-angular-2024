@@ -132,11 +132,7 @@ export class AuthenticationService {
     return isAuthenticated;
   }
 
-  /** Get all users */
-  getAllUsers(): Observable<User[]> {
-    return this.http.get<User[]>(this.apiUrl);
-  }
-
+  
 
 /** Nuovo metodo getUserDetails(email: string) */
   getUserDetails(email: string): Observable<User> {
